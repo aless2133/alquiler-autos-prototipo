@@ -8,7 +8,7 @@ from ui.principal import Principal
 BG = "#111827"
 CARD = "#1f2937"
 INPUT = "#252f3d"
-BLUE = "#2563eb"
+BLUE = "#2061ecef"
 TEXT = "#f9fafb"
 MUTED = "#9ca3af"
 
