@@ -36,7 +36,7 @@ class AppShell(tk.Tk):
         card.place(relx=.5, rely=.5, anchor="center", relwidth=.68, relheight=.82)
         tk.Label(card, text="Acceso seguro", bg=CARD, fg=TEXT,
                  font=("Segoe UI", 24, "bold")).pack(anchor="w")
-        tk.Label(card, text="Sprint 1 · Usuarios, seguridad y clientes",
+        tk.Label(card, text="Disponible para el administrador.",
                  bg=CARD, fg=MUTED, font=("Segoe UI", 11)).pack(anchor="w", pady=(5, 28))
         self.login_user = tk.StringVar()
         self.login_pass = tk.StringVar()
