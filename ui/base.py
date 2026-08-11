@@ -8,7 +8,7 @@ from ui.principal import Principal
 BG = "#111827"
 CARD = "#1f2937"
 INPUT = "#252f3d"
-BLUE = "#2061ecef"
+BLUE = "#2563eb"
 TEXT = "#f9fafb"
 MUTED = "#9ca3af"
 
@@ -49,7 +49,7 @@ class AppShell(tk.Tk):
                   bg=BLUE, fg="white", activebackground="#1d4ed8",
                   activeforeground="white", bd=0, padx=16, pady=11,
                   font=("Segoe UI", 11, "bold"), cursor="hand2").pack(fill="x", pady=8)
-        tk.Label(card, text="Prototipo local · SQLite · Sin dependencias externas",
+        tk.Label(card, text="Puedes continuar de manera segura.",
                  bg=CARD, fg=MUTED, font=("Segoe UI", 9)).pack(anchor="w", pady=(16, 0))
         tk.Label(card, text="Acceso inicial: admin / Admin123!",
                  bg=CARD, fg="#cbd5e1", font=("Segoe UI", 9)).pack(anchor="w", pady=(8, 0))

@@ -73,7 +73,7 @@ class Principal(tk.Frame):
                  font=("Segoe UI", 23, "bold")).pack(anchor="w", pady=(4, 0))
 
     def mostrar_dashboard(self):
-        self._titulo("Inicio", "Resumen del Sprint 1: acceso, usuarios internos y gestión de clientes.")
+        self._titulo("Inicio", "Acceso, usuarios internos y gestión de clientes.")
         datos = resumen()
         cards = tk.Frame(self.contenido, bg=BG)
         cards.pack(fill="x")
@@ -84,12 +84,6 @@ class Principal(tk.Frame):
         panel.pack(fill="both", expand=True, pady=18)
         tk.Label(panel, text="Alcance implementado", bg=CARD, fg=TEXT,
                  font=("Segoe UI", 12, "bold")).pack(anchor="w")
-        texto = ("HU-10: autenticación con bloqueo por intentos y cierre por inactividad.\n"
-                 "HU-09: crear, editar, desactivar usuarios y asignar administrador/empleado.\n"
-                 "HU-01: registrar, editar e inactivar clientes con validación de cédula/RUC.")
-        tk.Label(panel, text=texto, justify="left", bg=CARD, fg="#d1d5db",
-                 font=("Segoe UI", 10), pady=10).pack(anchor="w")
-
     def _tree(self, columnas, anchos):
         t = ttk.Treeview(self.contenido, columns=columnas, show="headings")
         for c, title, width in zip(columnas, columnas, anchos):
